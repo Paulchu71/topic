@@ -1,14 +1,2 @@
-export default {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-
-    if (url.pathname === "/") {
-      return Response.redirect(
-        `${url.origin}/quantum-gyroscope-project.pdf`,
-        302
-      );
-    }
-
-    return env.ASSETS.fetch(request);
-  }
-};
+// Compatibility entry point; wrangler.jsonc uses the root index.js.
+export { default } from "../index.js";

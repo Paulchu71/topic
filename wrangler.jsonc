@@ -2,6 +2,12 @@
   "name": "topic",
   "main": "./index.js",
   "compatibility_date": "2026-10-02",
+  "routes": [
+    {
+      "pattern": "topics.paul-chu.com",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": ".",
     "binding": "ASSETS",

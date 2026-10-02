@@ -1,0 +1,3 @@
+# Upload only the PDF; keep repository files out of static assets.
+**
+!quantum-gyroscope-project.pdf
