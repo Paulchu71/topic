@@ -9,6 +9,10 @@ export default {
       );
     }
 
-    return env.ASSETS.fetch(request);
+    if (url.pathname === "/quantum-gyroscope-project.pdf") {
+      return env.ASSETS.fetch(request);
+    }
+
+    return new Response("Not found", { status: 404 });
   }
 };
